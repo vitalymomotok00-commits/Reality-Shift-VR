@@ -8,16 +8,6 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-<<<<<<< HEAD
-@import url('./animations.css');
-
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
-=======
 
 /* Sections style */
 @import url('./header.css');
@@ -32,4 +22,3 @@
 @import url('./mobile-menu.css');
 @import url('./games.css');
 @import url('./mobile-menu.css');
->>>>>>> upstream/main

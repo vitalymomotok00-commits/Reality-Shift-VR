@@ -1,12 +1,9 @@
-<<<<<<< HEAD
-=======
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
->>>>>>> upstream/main
 h1,
 h2,
 h3,
