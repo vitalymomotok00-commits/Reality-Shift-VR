@@ -1,22 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Team Project Template</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"> 
+      <!-- CUSTOM STYLES -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
+    <!-- MAIN -->
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+       <!-- HERO -->
+      <load src="./partials/hero.html"/>
+      <!-- GAMES -->
+      <load src="./partials/games.html"/>
+      <!-- ADVANTAGES -->
+      <load src="./partials/advantages.html"/>
+      <!-- TARIFFS -->
+      <load src="./partials/tariffs.html"/>
+      <!-- BOOKING -->
+      <load src="./partials/booking.html"/>
+      <!-- GALLERY -->
+      <load src="./partials/gallery.html"/>
+      <!-- REVIEWS -->
+      <load src="./partials/reviews.html"/>
     </main>
-
+    <!-- FOOTER -->
     <load src="./partials/footer.html" />
+
+     <!-- MOBILE-MENU -->
+    <load src="./partials/mobile-menu.html" />
+
 
     <script type="module" src="./main.js"></script>
   </body>

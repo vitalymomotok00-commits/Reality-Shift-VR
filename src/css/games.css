@@ -1,0 +1,278 @@
+/* ==========================
+   MOBILE
+   ========================== */
+
+.games {
+  width: 100%;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.games .container {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.games-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.games-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+.games-description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Список карток */
+
+.games-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Картка */
+
+.games-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 335px;
+  box-sizing: border-box;
+  border-radius: 0;
+  background-color: #2a0359;
+  overflow: hidden;
+}
+
+/* Зображення */
+
+.games-media {
+  display: block;
+  width: 100%;
+  height: 240px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.games-img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* Підпис під зображенням */
+
+.games-content {
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  padding: 16px;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Назва гри */
+
+.games-subtitle {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Опис гри */
+
+.games-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* ==========================
+   TABLET - 768px
+   ========================== */
+
+@media screen and (min-width: 768px) {
+  .games .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .games-title {
+    font-size: 44px;
+  }
+
+  /* Дві картки в ряд */
+
+  .games-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  /* Ширина картки 340px */
+
+  .games-item {
+    width: calc((100% - 24px) / 2);
+    max-width: none;
+  }
+
+  /* Висота зображення 240px */
+
+  .games-media {
+    height: 240px;
+  }
+
+  .games-img {
+    height: 240px;
+  }
+
+  /* Висота підпису 70px */
+
+  .games-content {
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    padding: 16px 16px 28px;
+    flex-shrink: 0;
+  }
+}
+
+/* ==========================
+   DESKTOP - 1440px
+   ========================== */
+
+@media screen and (min-width: 1440px) {
+  .games {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .games .container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 64px;
+    padding-right: 64px;
+    gap: 56px;
+  }
+
+  /* Заголовок секції */
+
+  .games-header {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+  }
+
+  .games-title {
+    width: 50%;
+    max-width: 520px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+
+  .games-description {
+    max-width: 752px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  /* П'ять карток в ряд */
+
+  .games-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 32px;
+  }
+
+  /* Ширина картки 236.8px */
+
+  .games-item {
+    width: calc((100% - 128px) / 5);
+    max-width: none;
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-width: 0;
+    border-radius: 0;
+  }
+
+  /* Висота зображення 240px */
+
+  .games-media {
+    height: 240px;
+  }
+
+  .games-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+  }
+
+  /* Підпис висотою 94px */
+
+  .games-content {
+    height: 94px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Назва гри */
+
+  .games-subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  /* Опис гри */
+
+  .games-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

@@ -8,6 +8,7 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
+<<<<<<< HEAD
 @import url('./animations.css');
 
 /* Sections style */
@@ -16,3 +17,19 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+=======
+
+/* Sections style */
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./games.css');
+@import url('./advantages.css');
+@import url('./tariffs.css');
+@import url('./booking.css');
+@import url('./gallery.css');
+@import url('./reviews.css');
+@import url('./footer.css');
+@import url('./mobile-menu.css');
+@import url('./games.css');
+@import url('./mobile-menu.css');
+>>>>>>> upstream/main

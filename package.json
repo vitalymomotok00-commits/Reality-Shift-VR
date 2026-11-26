@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "web-team-project-template",
+=======
+  "name": "reality-shift-vr",
+>>>>>>> upstream/main
   "private": true,
   "version": "1.0.0",
   "type": "module",

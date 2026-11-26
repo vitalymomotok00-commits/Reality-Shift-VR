@@ -1,0 +1,116 @@
+.advantages {
+}
+
+.advantages-title {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.advantages-description {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.advantages-wrapper {
+  background-color: #2a0359;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  height: 289px;
+}
+
+.advantages-icons {
+  height: 48px;
+}
+
+.advantages-item-title {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #fff;
+}
+
+.advantages-item-description {
+  text-align: center;
+}
+
+.advantages-item {
+  width: 100%;
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .advantages-item-title,
+  .advantages-item-description {
+    width: 100%;
+  }
+
+  .advantages-title {
+    font-size: 32px;
+  }
+
+  .advantages-description {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .advantages-item-title {
+    font-size: 32px;
+  }
+
+  .advantages-item-description {
+    font-size: 18px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 64px) / 3);
+  }
+
+  .advantages-title {
+    font-size: 48px;
+  }
+
+  .advantages-description {
+    font-size: 20px;
+    margin-bottom: 80px;
+  }
+
+  .advantages {
+    background-image: url(/img/advantages/Ellipse-advantages.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+}

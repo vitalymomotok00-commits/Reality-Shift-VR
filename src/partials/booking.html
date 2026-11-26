@@ -1,0 +1,116 @@
+
+    <section class="contact section-padding" id="reserve">
+      <div class="contact-container container">
+        <div class="section-title">
+          <h3 class="paragraf-form">Забронювати</h3>
+          <h2 class="title-form">Забронюйте сеанс</h2>
+          <p class="paragraf-form-under-title">
+            Заповніть форму, щоб забронювати сеанс.
+          </p>
+        </div>
+        <div class="section-form">
+          <form class="form-reserv">
+            <div class="form-field">
+              <label class="labl-input" for="name">
+                Ім'я
+                <sup>*</sup>
+              </label>
+
+              <input
+                type="text"
+                required
+                id="name"
+                name="name"
+                minlength="5"
+                maxlength="64"
+                placeholder="Андрій"
+              />
+            </div>
+            <div class="form-field">
+              <label class="labl-input" for="email">
+                Електронна пошта
+                <sup>*</sup>
+              </label>
+              <input
+                class="input-email"
+                type="email"
+                name="email"
+                id="email"
+                required
+                aria-describedby="email-error"
+                placeholder="hello@realityshift.com"
+              />
+              <span class="field-error" id="email-error"> Error Text </span>
+            </div>
+            <fieldset class="radio-order">
+              <legend>
+                Пакет
+                <sup>*</sup>
+              </legend>
+              <ul class="order-price">
+                <li class="radio-input">
+                  <input
+                    class="input-checed visuali-hidden"
+                    type="radio"
+                    name="order-price"
+                    id="start"
+                    value="start"
+                    required
+                    checked
+                  />
+                  <label class="castom" for="start">
+                    <span class="castom-radio"> </span>
+                    Старт
+                  </label>
+                </li>
+                <li class="radio-input">
+                  <input
+                    class="input-checed visuali-hidden"
+                    type="radio"
+                    name="order-price"
+                    id="standart"
+                    value="standart"
+                    required
+                  />
+                  <label class="castom" for="standart">
+                    <span class="castom-radio"> </span>
+                    Стандарт
+                  </label>
+                </li>
+                <li class="radio-input">
+                  <input
+                    class="input-checed visuali-hidden"
+                    type="radio"
+                    name="order-price"
+                    id="premium"
+                    value="premium"
+                    required
+                  />
+                  <label class="castom" for="premium">
+                    <span class="castom-radio"> </span>
+                    Преміум
+                  </label>
+                </li>
+                <li class="radio-input">
+                  <input
+                    class="input-checed visuali-hidden"
+                    type="radio"
+                    name="order-price"
+                    id="company"
+                    value="company"
+                    required
+                  />
+                  <label class="castom" for="company">
+                    <span class="castom-radio"> </span>
+                    Компанія
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button-form" type="submit">Забронювати</button>
+          </form>
+          
+        </div>
+      </div>
+    </section>
+

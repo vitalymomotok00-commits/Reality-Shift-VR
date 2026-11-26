@@ -1,0 +1,231 @@
+.pricing{
+background:#1F0243;
+
+
+}
+.pricing{
+
+  background-image: url("/img/price/ellipse.svg");
+background-repeat: no-repeat;
+
+  background-position: center top;
+
+}
+
+.pricing-container{
+display: flex;
+
+flex-direction: column;
+align-items: center;
+gap: 32px;
+align-self: stretch;
+}
+.title-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 24px;
+align-self: stretch;
+}
+.price-order-container{
+    display: flex;
+    flex-direction: column;
+
+gap: 24px;
+
+
+}
+.plan-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+.button-game{
+   display: flex;
+padding: 10px 24px;
+justify-content: center;
+align-items: center;
+color: #fff;
+align-self: stretch;
+border-radius: 12px;
+border-top: 1.5px solid  #5406B3;
+border-right: 1.5px solid  #5406B3;
+border-bottom: 4px solid  #5406B3;
+border-left: 1.5px solid  #5406B3;
+background:  #6A08E0;
+transition: 250ms linear;
+
+font-size:  16px;
+
+font-weight: 600;
+line-height: 150%;
+}
+.plan-features{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+.order{
+    display: flex;
+min-width: 320px;
+padding: 16px;
+flex-direction: column;
+
+
+flex: 1 0 0;
+border-radius: 8px;
+border: var(--Stroke-Border-Width, 1px) solid var(--Color-Scheme-1-Border, rgba(255, 255, 255, 0.20));
+background: #2A0359;
+}
+.icon-vector{
+fill: #fff;
+}
+.li-features{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.button-game:hover,
+.button-game:focus{
+ border-radius: 12px;
+border-top: 1.5px solid  #2A0359;
+border-right: 1.5px solid  #2A0359;
+border-bottom: 4px solid  #2A0359;
+border-left: 1.5px solid  #2A0359;
+background:  #5406B3;
+}
+.title-pricing{
+font-size: 32px;
+font-weight: 700;
+line-height: 100%;
+letter-spacing: -0.32px;
+}
+.paragraf-under-title-pricing{
+font-size: 16px;
+font-weight: 400;
+line-height: 150%;
+}
+.title-plan{
+font-size: 18px;
+font-weight: 700;
+line-height: 110%;
+letter-spacing: -0.18px; 
+}
+.paragraf-plan{
+font-size: 36px;
+font-weight: 700;
+line-height: 100%; 
+letter-spacing: -0.36px;
+}
+.span-text{
+font-size: 16px;
+font-weight: 400;
+line-height: 150%;
+}
+  .paragraf-under-title-pricing {
+  text-align: center;
+}
+@media (min-width: 768px) {
+.pricing{
+  background-color: #1f0243;
+  background-image: url("/img/price/ellipse-tablet.svg");
+  background-repeat: no-repeat;
+
+
+background-position: left -0.5px  top;
+
+}
+    .paragraf-under-title-pricing{
+width: 522px;
+    }
+.price-order-container{
+    display: flex;
+flex-direction: row;
+gap: 24px;
+width: 100%;
+flex-wrap: wrap;
+}
+ .order {
+    box-sizing: border-box;
+ min-width: 320px;
+ padding: 32px;
+    gap: 32px;
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+
+  .plan-heading{
+    margin: 0;
+  }
+  .plan-features{
+    margin: 0;
+  }
+  .button-game {
+    margin-top: auto;
+  }
+  .title-pricing{
+    font-size: 44px;
+  }
+  .paragraf-plan{
+    font-size: 48px;
+  }
+  .paragraf-under-title-pricing {
+  text-align: center;
+}
+}
+@media (min-width: 1440px){
+
+.pricing {
+  background-color: #1f0243;
+  background-image: url("/img/price/ellipse-desk-top.svg");
+  background-repeat: no-repeat;
+background-size: 737px 155px cover;
+
+background-position: left -1 top 264px;
+
+}
+.price-order-container {
+    gap: 32px;
+    flex-wrap: nowrap;
+  }
+
+  .order {
+    min-width: 0;
+    flex: 0 0 calc((100% - 96px) / 4);
+  }
+
+  .pricing-container{
+    gap: 80px;
+   
+
+  }
+  .title-pricing{
+    font-size: 45px;
+    letter-spacing: -0.54px;
+  }
+  .paragraf-under-title-pricing{
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .title-plan{
+    font-size: 26px;
+    line-height: 110%;
+    letter-spacing: -0.26px;
+  }
+  .paragraf-plan{
+    font-size: 64px;
+    letter-spacing: -0.64px;
+  }
+  .span-text{
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .button-game{
+font-size: 18px;
+line-height: 150%;
+font-weight: 600;
+  }
+}

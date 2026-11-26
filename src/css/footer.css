@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .footer {
   padding: 20px 0;
 }
@@ -18,4 +19,288 @@
   height: 24%;
   background-color: #41d1ff;
   transition: 200ms ease;
+=======
+/*  FOOTER: MOBILE  */
+
+/* Figma: Footer 375x928, Container 335x832 */
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  padding: 48px 0;
+  background-color: #1f0243;
+  background-image: url('../img/footer/ellipse-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+/* Logo */
+
+.footer-logo {
+  display: block;
+}
+
+.footer-logo-icon {
+  display: block;
+  width: 159px;
+  height: 68px;
+}
+
+/* Address and contacts */
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  font-style: normal;
+}
+
+.footer-contact-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.footer-contact-label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.footer-contact-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.footer-contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* Social links */
+
+.footer-socials {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 144px;
+  height: 40px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Navigation */
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 360px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.footer-nav-link {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.footer-nav-mobile-only {
+  display: list-item;
+}
+
+/* Credits */
+
+.footer-credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.footer-divider {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.footer-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-copyright {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/*  FOOTER: TABLET  */
+
+/* Figma: Footer 768x472, Container 704x376 */
+
+@media screen and (min-width: 768px) {
+  .footer {
+    background-image: url('../img/footer/ellipse-tablet.svg');
+  }
+
+  .footer-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer-info {
+    flex: 0 0 320px;
+    /*
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 320px;
+    */
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .footer-logo-icon {
+    width: 84px;
+    height: 36px;
+  }
+
+  .footer-address,
+  .footer-contact-group,
+  .footer-contact-details {
+    align-items: flex-start;
+  }
+
+  .footer-contact-label,
+  .footer-contact-link {
+    text-align: left;
+  }
+
+  .footer-socials {
+    width: 96px;
+    height: 24px;
+  }
+
+  .footer-social-link {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-nav {
+    flex: 0 0 320px;
+    justify-content: flex-end;
+    min-height: 0;
+  }
+
+  .footer-nav-list {
+    align-items: flex-start;
+    width: 75px;
+  }
+
+  .footer-nav-mobile-only {
+    display: none;
+  }
+}
+
+/*  FOOTER: DESKTOP  */
+
+/* Figma: Footer 1440x572, Container 1312x412 */
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 80px 0;
+    background-image: url('../img/footer/ellipse-desktop.svg');
+    background-size: 1440px 502px;
+  }
+
+  .footer-info {
+    flex: 0 0 848px;
+  }
+
+  .footer-contact-label,
+  .footer-contact-link {
+    font-size: 16px;
+  }
+
+  .footer-nav {
+    flex: 0 0 400px;
+  }
+
+  .footer-nav-list {
+    width: auto;
+    gap: 16px;
+  }
+
+  .footer-nav-link {
+    font-size: 18px;
+  }
+
+  .footer-copyright {
+    font-size: 16px;
+  }
+>>>>>>> upstream/main
 }

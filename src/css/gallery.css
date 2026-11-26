@@ -1,0 +1,118 @@
+/* Стилі для секції Галерея (мобільна база) */
+.gallery {
+  position: relative;
+  padding: 40px 0;
+  overflow: hidden;
+
+  background-image: url('../img/gallery/gallery-ellipse-mobile.svg');
+  background-repeat: no-repeat;
+}
+
+@media(min-width:768px){
+  .gallery{
+    background-image: url('../img/gallery/gallery-ellipse-tablet.svg');
+  }
+}
+
+@media(min-width:1440px) {
+  .gallery {
+    background-image: url('../img/gallery/gallery-ellipse-desktop.svg');
+  }
+}
+
+/* Заголовок для мобілки (3 рядки) */
+.gallery-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  color: #ffffff;
+  max-width: 380px;
+  margin: 0 auto 16px;
+  position: relative;
+  z-index: 1;
+}
+
+/* На мобільці працює брейк для 3 рядків */
+.gallery-title .br-mobile {
+  display: block;
+}
+
+.gallery-title .br-desktop {
+  display: none;
+}
+
+/* Опис */
+.gallery-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  max-width: 335px;
+  margin: 0 auto 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Мобільна сітка */
+.gallery-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.gallery-item:first-child {
+  grid-column: span 2;
+}
+
+.gallery-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Десктоп та планшети (від 768px і вище) — заголовок на 2 рядки */
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding: 60px 0;
+  }
+
+  .gallery-title {
+    font-size: 36px;
+    max-width: 580px;
+    margin-bottom: 20px;
+  }
+
+  /* Вимикаємо мобільний переніс і вмикаємо десктопний (2 рядки) */
+  .gallery-title .br-mobile {
+    display: none;
+  }
+
+  .gallery-title .br-desktop {
+    display: block;
+  }
+
+  .gallery-text {
+    max-width: 640px;
+    margin-bottom: 40px;
+  }
+
+  .gallery-list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .gallery-item:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}

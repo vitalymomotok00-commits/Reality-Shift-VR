@@ -1,19 +1,33 @@
 <header class="header">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+    <a class="header-logo" href="./index.html" aria-label="Reality Shift">
+      <svg class="header-logo-icon" width="100" height="43">
+        <use href="./img/header-logo-svg.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li><a href="#about">Про нас</a></li>
+        <li><a href="#games">Ігри</a></li>
+        <li><a href="#advantages">Переваги</a></li>
+        <li><a href="#prices">Ціни</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#reviews">Відгуки</a></li>
+        <li><a href="#contacts">Контакти</a></li>
       </ul>
     </nav>
+    <a class="header-booking-btn" href="#booking"> Забронювати сеанс </a>
+
+    <button
+      class="menu-open-btn"
+      type="button"
+      aria-label="Відкрити меню"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+    >
+      <svg class="menu-open-icon" width="24" height="24" aria-hidden="true">
+        <use href="./img/burger.svg#icon-Vector"></use>
+      </svg>
+    </button>
   </div>
 </header>

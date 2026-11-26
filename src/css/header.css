@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .header {
   padding: 20px 0;
 }
@@ -41,4 +42,108 @@
 }
 .nav-link.active::after {
   background: #747bff;
+=======
+/* Mobile */
+.header {
+  background-color: #1f0243;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.menu-open-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.menu-open-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header-booking-btn {
+  display: none;
+}
+
+.header-nav {
+  display: none;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .header-booking-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 8px 20px;
+    background-color: #7000ff;
+    color: #ffffff;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  .header .container {
+    justify-content: flex-start;
+    gap: 24px;
+    min-height: 72px;
+  }
+  .header-logo {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .header-nav {
+    display: block;
+  }
+  .mobile-menu {
+    display: none;
+  }
+
+  .header-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-nav-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: block;
+  }
+
+  .header-booking-btn {
+    margin-left: auto;
+  }
+
+  .menu-open-btn {
+    display: none;
+  }
+>>>>>>> upstream/main
 }
